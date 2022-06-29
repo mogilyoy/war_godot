@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Ground021_2K_Displacement.jpg-fd33929e54e21e7db532aacb91363deb.s3tc.stex"
-path.etc2="res://.import/Ground021_2K_Displacement.jpg-fd33929e54e21e7db532aacb91363deb.etc2.stex"
+path.s3tc="res://.import/Ground021_2K_Displacement.jpg-5b92e4a872b3e6a2f218370a16125c0c.s3tc.stex"
+path.etc2="res://.import/Ground021_2K_Displacement.jpg-5b92e4a872b3e6a2f218370a16125c0c.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://ANDREY😂/Textures/Ground021_2K-JPG/Ground021_2K_Displacement.jpg"
-dest_files=[ "res://.import/Ground021_2K_Displacement.jpg-fd33929e54e21e7db532aacb91363deb.s3tc.stex", "res://.import/Ground021_2K_Displacement.jpg-fd33929e54e21e7db532aacb91363deb.etc2.stex" ]
+source_file="res://ANDREY_3D/Textures/Ground021_2K-JPG/Ground021_2K_Displacement.jpg"
+dest_files=[ "res://.import/Ground021_2K_Displacement.jpg-5b92e4a872b3e6a2f218370a16125c0c.s3tc.stex", "res://.import/Ground021_2K_Displacement.jpg-5b92e4a872b3e6a2f218370a16125c0c.etc2.stex" ]
 
 [params]
 

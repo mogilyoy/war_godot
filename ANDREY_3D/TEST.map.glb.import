@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/TEST.map.glb-d3fd37d95e3c8c73ec6d01ab8fe31712.scn"
+path="res://.import/TEST.map.glb-21e25ed11e3c3ec28e590d36937b8aeb.scn"
 
 [deps]
 
-source_file="res://ANDREY😂/TEST.map.glb"
-dest_files=[ "res://.import/TEST.map.glb-d3fd37d95e3c8c73ec6d01ab8fe31712.scn" ]
+source_file="res://ANDREY_3D/TEST.map.glb"
+dest_files=[ "res://.import/TEST.map.glb-21e25ed11e3c3ec28e590d36937b8aeb.scn" ]
 
 [params]
 

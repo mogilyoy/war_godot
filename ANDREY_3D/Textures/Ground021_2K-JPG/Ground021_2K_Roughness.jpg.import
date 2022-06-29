@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Ground021_2K_Roughness.jpg-10090610c1617e816c32fcd9bcf2d7d9.s3tc.stex"
-path.etc2="res://.import/Ground021_2K_Roughness.jpg-10090610c1617e816c32fcd9bcf2d7d9.etc2.stex"
+path.s3tc="res://.import/Ground021_2K_Roughness.jpg-59ab4948d4a424c94b332aab2d0fafdd.s3tc.stex"
+path.etc2="res://.import/Ground021_2K_Roughness.jpg-59ab4948d4a424c94b332aab2d0fafdd.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://ANDREY😂/Textures/Ground021_2K-JPG/Ground021_2K_Roughness.jpg"
-dest_files=[ "res://.import/Ground021_2K_Roughness.jpg-10090610c1617e816c32fcd9bcf2d7d9.s3tc.stex", "res://.import/Ground021_2K_Roughness.jpg-10090610c1617e816c32fcd9bcf2d7d9.etc2.stex" ]
+source_file="res://ANDREY_3D/Textures/Ground021_2K-JPG/Ground021_2K_Roughness.jpg"
+dest_files=[ "res://.import/Ground021_2K_Roughness.jpg-59ab4948d4a424c94b332aab2d0fafdd.s3tc.stex", "res://.import/Ground021_2K_Roughness.jpg-59ab4948d4a424c94b332aab2d0fafdd.etc2.stex" ]
 
 [params]
 
