@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://ANDREY_3D/Textures/Ground021_2K-JPG/Ground021_2K_Roughness.jpg" type="Texture" id=1]
 [ext_resource path="res://ANDREY_3D/Textures/Ground021_2K-JPG/Ground021_2K_Color.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/mob_left.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Camera.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/mob_right1.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "TEST_Plane"
@@ -82,8 +85,9 @@ shape = SubResource( 2 )
 transform = Transform( 23.7697, 0, 0, 0, 2.88593, 0, 5.68434e-13, 0, 16.4388, 1.28821, -7.88366, -0.273211 )
 shape = SubResource( 2 )
 
-[node name="StaticBody3" type="StaticBody" parent="Plane"]
-transform = Transform( -0.866611, 0, -8.74228e-08, 0, 1, 0, 7.57615e-08, 0, -1, 6.07927, 0.168915, 0.0806885 )
+[node name="StaticBody" type="StaticBody" parent="Plane"]
+transform = Transform( 0.942162, 0, 0, 0, 1.08718, 0, 0, 0, 1.08718, 6.30934, 0, 0 )
+visible = false
 
 [node name="CollisionShape" type="CollisionShape" parent="Plane/StaticBody3"]
 transform = Transform( 29.3258, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, -1.52774, -2.93638, -7.97882 )
@@ -115,4 +119,16 @@ shape = SubResource( 2 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Plane/StaticBody3"]
 transform = Transform( 7.82939, 0.0160412, -0.00466638, -0.0319099, 2.88586, -0.00613459, 0.0212621, 0.0142457, 1.24657, 0.267419, -2.85621, -15.2494 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Plane/StaticBody"]
+transform = Transform( 3.63751, 0, 0, 0, 3.72483, 0, 0, 0, 11.9519, 21.1333, -3.78011, 32.6025 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Plane/StaticBody"]
+transform = Transform( 6.59261, 0, 0, 0, 2.88593, 0, 0, 0, 1.24659, -0.491742, -2.85573, 15.3107 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Plane/StaticBody"]
+transform = Transform( 23.7697, 0, 0, 0, 2.88593, 0, 0, 0, 16.4388, 1.28821, -7.88366, -0.0121317 )
 shape = SubResource( 2 )
