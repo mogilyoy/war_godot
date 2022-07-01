@@ -45,7 +45,6 @@ material/1 = null
 
 [node name="StaticBody2" type="StaticBody" parent="Plane"]
 transform = Transform( -0.866611, 0, -8.74228e-08, 0, 1, 0, 7.57615e-08, 0, -1, 6.07927, 0.168915, 0.0806885 )
-visible = false
 
 [node name="CollisionShape" type="CollisionShape" parent="Plane/StaticBody2"]
 transform = Transform( 29.3258, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, -1.60215, -2.93638, 8.23466 )
@@ -76,57 +75,44 @@ transform = Transform( 3.63751, 0, 0, 0, 3.72483, 0, 0, 0, 11.9519, 21.1333, -3.
 shape = SubResource( 2 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Plane/StaticBody2"]
-transform = Transform( 7.7235, 0, 2.15719e-08, 0, 2.88593, 0, 8.56784e-08, 0, 1.24659, 0.46177, -2.85573, 15.3107 )
+transform = Transform( 7.72337, 0.0158239, -0.00460319, -0.0319099, 2.88586, -0.00613459, 0.0212621, 0.0142457, 1.24657, 0.461771, -2.85573, 15.3107 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="Plane/StaticBody2"]
-transform = Transform( 23.7697, 0, 0, 0, 2.88593, 0, 0, 0, 16.4388, 1.28821, -7.88366, -0.0121317 )
+transform = Transform( 23.7697, 0, 0, 0, 2.88593, 0, 5.68434e-13, 0, 16.4388, 1.28821, -7.88366, -0.273211 )
 shape = SubResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="Plane"]
-transform = Transform( 0.942162, 0, 0, 0, 1.08718, 0, 0, 0, 1.08718, 6.30934, 0, 0 )
-visible = false
+[node name="StaticBody3" type="StaticBody" parent="Plane"]
+transform = Transform( -0.866611, 0, -8.74228e-08, 0, 1, 0, 7.57615e-08, 0, -1, 6.07927, 0.168915, 0.0806885 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 29.3258, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, -1.60215, -2.93638, 8.23466 )
+[node name="CollisionShape" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 29.3258, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, -1.52774, -2.93638, -7.97882 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape4" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 2.86527, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, 25.4534, -2.93638, 0.460506 )
+[node name="CollisionShape5" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 4.46726, 0, 2.75032e-07, 0, 3.72483, 0, 6.28633e-08, 0, 11.9519, -21.0813, -3.66084, -32.2622 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape11" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 2.86527, 0, 0, 0, 2.88593, 0, 0, 0, 2.09383, -26.6551, -2.81093, 0.0601935 )
+[node name="CollisionShape7" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 2.79712, 0, 4.12375e-07, 0, 3.72483, 0, 8.15689e-08, 0, 6.53227, -12.1173, -3.67484, -32.4632 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape5" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 3.63751, 0, 0, 0, 3.72483, 0, 0, 0, 11.9519, -21.7437, -3.67484, 32.6025 )
+[node name="CollisionShape8" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 2.02521, 0, -7.39287e-08, 0, 3.72483, 0, -1.93886e-08, 0, 6.53227, 12.6724, -3.67484, -32.4742 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape7" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 1.72047, 0, 0, 0, 3.72483, 0, 0, 0, 6.53227, -12.8749, -3.67484, 32.5397 )
+[node name="CollisionShape9" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 15.1395, 0, 5.02857e-08, 0, 3.72609, 0, 1.14391e-07, 0, 4.49982, -0.0212111, -3.69582, -32.3602 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape8" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 2.28113, 0, 0, 0, 3.72483, 0, 0, 0, 6.53227, 11.9522, -3.67484, 32.5397 )
+[node name="CollisionShape10" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 11.9992, 0, 0, 0, 3.72483, 0, 9.09495e-13, 0, 2.77826, 0.59845, 3.64933, -32.5913 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape9" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 13.6297, 0, 0, 0, 3.72609, 0, 0, 0, 4.49982, -1.48956, -3.67484, 32.5397 )
+[node name="CollisionShape6" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 3.63751, 0, -4.54747e-13, 0, 3.72483, 0, 5.68434e-14, 0, 11.9519, 21.2077, -3.78011, -32.4255 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape10" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 11.9992, 0, 0, 0, 3.72483, 0, 0, 0, 2.77826, -1.18415, 3.59512, 32.5397 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape6" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 3.63751, 0, 0, 0, 3.72483, 0, 0, 0, 11.9519, 21.1333, -3.78011, 32.6025 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 6.59261, 0, 0, 0, 2.88593, 0, 0, 0, 1.24659, -0.491742, -2.85573, 15.3107 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape3" type="CollisionShape" parent="Plane/StaticBody"]
-transform = Transform( 23.7697, 0, 0, 0, 2.88593, 0, 0, 0, 16.4388, 1.28821, -7.88366, -0.0121317 )
+[node name="CollisionShape2" type="CollisionShape" parent="Plane/StaticBody3"]
+transform = Transform( 7.82939, 0.0160412, -0.00466638, -0.0319099, 2.88586, -0.00613459, 0.0212621, 0.0142457, 1.24657, 0.267419, -2.85621, -15.2494 )
 shape = SubResource( 2 )
