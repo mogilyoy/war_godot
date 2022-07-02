@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://script/Bullet.gd" type="Script" id=1]
+
+[sub_resource type="CapsuleShape" id=5]
+height = 7.82029
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 1
+emission_sphere_radius = 0.1
+gravity = Vector3( 0, 0, 0 )
+angle = 180.0
+angle_random = 1.0
+color = Color( 0.992157, 1, 0, 1 )
+
+[sub_resource type="QuadMesh" id=8]
+
+[node name="Bullet" type="RigidBody"]
+transform = Transform( 1.52302, 0, 0, 0, -1.52302, 1.33146e-07, 0, -1.33146e-07, -1.52302, 0, 0, 0 )
+collision_layer = 0
+mass = 0.3
+gravity_scale = 0.0
+contacts_reported = 2
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.236249, 0, 0, 0, 0.23908, -1.47216e-08, 0, -1.47216e-08, 0.0706833, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="RayCast" type="RayCast" parent="."]
+transform = Transform( -0.25016, -0.968204, 0, 0.968204, -0.25016, -1.95699e-07, 1.38874e-07, -5.26361e-08, 1, 0, 4.55538e-07, -0.243638 )
+enabled = true
+cast_to = Vector3( 0, 0, -10 )
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 0.335842, 0, 0, 0, 0.335842, 1.2946e-07, 0, 1.2946e-07, 1.81669, 0, 0, 0 )
+material_override = SubResource( 6 )
+amount = 100
+process_material = SubResource( 7 )
+draw_pass_1 = SubResource( 8 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/выстрел мосина.mp3-2dfabfdf1dd82bdc809f4fdb970e56de.mp3str"
+
+[deps]
+
+source_file="res://sound/выстрел мосина.mp3"
+dest_files=[ "res://.import/выстрел мосина.mp3-2dfabfdf1dd82bdc809f4fdb970e56de.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
