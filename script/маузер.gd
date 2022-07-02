@@ -5,7 +5,7 @@ const ADS_LERP = 20
 const damage = 500
 const anim_speed = 1
 
-onready var animation = $Anim
+onready var animation = $AnimationPlayer
 onready var sound = $BAX
 onready var muzzle = $Muzzle
 onready var bullet = preload("res://scenes/Пуля дура.tscn")
@@ -19,24 +19,15 @@ export var ads_positon: Vector3
 func _ready():
 	# camera.get_node(camera_path)
 	pass
-
-func _physics_process(delta): 
-	if Input.is_action_pressed("aim"):
-		transform.origin = transform.origin.linear_interpolate(ads_positon, ADS_LERP * delta)
-	else:
-		transform.origin = transform.origin.linear_interpolate(default_positon, ADS_LERP * delta)
-		
-	if Input.is_action_just_pressed("reload"):
-		mag = 30	
-
-func GunAnimation(collision_point, vector):
+	
+func GunAnimation(vect):
 	if animation.is_playing():
 			pass
 	else:
 			var b = bullet.instance()
 			muzzle.add_child(b)
-			b.SHOOT(collision_point, vector)
-			animation.play("Отдача")
+			b.SHOOT(vect)
+			animation.play("ВЫстрел")
 			sound.stop()
 			sound.play()
 	

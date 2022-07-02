@@ -129,7 +129,8 @@ draw_pass_3 = null
 [node name="BAX" type="AudioStreamPlayer" parent="." index="7"]
 pause_mode = 1
 stream = ExtResource( 4 )
-volume_db = 4.436
+volume_db = -61.977
+pitch_scale = 2.11
 script = ExtResource( 2 )
 
 [node name="Muzzle" type="Spatial" parent="." index="8"]

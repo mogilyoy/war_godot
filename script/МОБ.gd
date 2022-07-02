@@ -6,9 +6,11 @@ var health = 100
 var jumpforce = 20
 var damage = 150
 
+onready var gun = $M98
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	vel.z = 3
+	#vel.z = 3
 	
 	pass # Replace with function body.
 
@@ -19,13 +21,15 @@ func _process(delta):
 		queue_free()
 		
 func _physics_process(delta):
-	vel.y -= gravity * delta
+	vel.y -= gravity*delta
 	vel.x = 0
-	vel = move_and_slide(vel, Vector3.UP)
-	if vel.z < 0.1 and vel.z>-0.1:
-		vel.y = jumpforce
-		vel.z = 3
+	vel.z = 0
+	move_and_slide(vel, Vector3.UP)
+
 		
 func _on_Area_body_entered(body):
 	if body.is_in_group('left'):
 		body.health -= damage
+
+func _on_Timer_timeout():
+	gun.GunAnimation(-1000)

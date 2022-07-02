@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://script/МОБ.gd" type="Script" id=1]
+[ext_resource path="res://scenes/M98.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -18,7 +19,7 @@ albedo_color = Color( 0.0627451, 0, 0.788235, 1 )
 
 [sub_resource type="CapsuleShape" id=5]
 
-[node name="mob_left" type="KinematicBody" groups=["right"]]
+[node name="mobright" type="KinematicBody" groups=["human", "right"]]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
 script = ExtResource( 1 )
 
@@ -46,4 +47,12 @@ shape = SubResource( 4 )
 transform = Transform( 0.856677, 0, -4.70751e-09, 0, 1.48545, 0, -4.70752e-09, 0, 0.748981, 0, 1.22934, 0 )
 shape = SubResource( 5 )
 
+[node name="M98" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.668153, 0, 1.54976e-08, 0, 0.668153, 0, -1.54976e-08, 0, -0.668153, -1.41295, 1.47296, -0.571307 )
+
+[node name="Timer" type="Timer" parent="." groups=["human", "left"]]
+wait_time = 5.0
+autostart = true
+
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

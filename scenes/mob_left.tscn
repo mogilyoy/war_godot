@@ -19,7 +19,7 @@ albedo_color = Color( 0.235294, 0.317647, 1, 1 )
 
 [sub_resource type="CapsuleShape" id=5]
 
-[node name="Spatial" type="KinematicBody" groups=["left"]]
+[node name="Spatial" type="KinematicBody" groups=["human", "left"]]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
 script = ExtResource( 1 )
 
@@ -50,4 +50,9 @@ shape = SubResource( 5 )
 [node name="M98" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.668153, 0, 0, 0, 0.668153, 0, 0, 0, 0.668153, 1.15018, 1.53759, 0.617275 )
 
+[node name="Timer" type="Timer" parent="." groups=["human", "left"]]
+wait_time = 5.0
+autostart = true
+
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
