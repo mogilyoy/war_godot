@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://script/mob_left.gd" type="Script" id=1]
+[ext_resource path="res://scenes/M98.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -45,5 +46,8 @@ shape = SubResource( 4 )
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 transform = Transform( 0.856677, 0, -4.70751e-09, 0, 1.48545, 0, -4.70752e-09, 0, 0.748981, 0, 1.22934, 0 )
 shape = SubResource( 5 )
+
+[node name="M98" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.668153, 0, 0, 0, 0.668153, 0, 0, 0, 0.668153, 1.15018, 1.53759, 0.617275 )
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
